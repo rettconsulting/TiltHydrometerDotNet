@@ -1,0 +1,13 @@
+G:\R&D\REOSoftware\TiltHydrometer\WinBeaconWrapper\bin\Debug\WinBeaconWrapper.dll
+G:\R&D\REOSoftware\TiltHydrometer\WinBeaconWrapper\bin\Debug\WinBeaconWrapper.pdb
+G:\R&D\REOSoftware\TiltHydrometer\WinBeaconWrapper\bin\Debug\WinBeacon.dll
+G:\R&D\REOSoftware\TiltHydrometer\WinBeaconWrapper\bin\Debug\WinBeacon.Stack.dll
+G:\R&D\REOSoftware\TiltHydrometer\WinBeaconWrapper\bin\Debug\LibUsbDotNet.dll
+G:\R&D\REOSoftware\TiltHydrometer\WinBeaconWrapper\bin\Debug\WinBeacon.pdb
+G:\R&D\REOSoftware\TiltHydrometer\WinBeaconWrapper\bin\Debug\WinBeacon.xml
+G:\R&D\REOSoftware\TiltHydrometer\WinBeaconWrapper\bin\Debug\WinBeacon.Stack.pdb
+G:\R&D\REOSoftware\TiltHydrometer\WinBeaconWrapper\obj\Debug\WinBeaconWrapper.csprojResolveAssemblyReference.cache
+G:\R&D\REOSoftware\TiltHydrometer\WinBeaconWrapper\obj\Debug\WinBeaconWrapper.csproj.CoreCompileInputs.cache
+G:\R&D\REOSoftware\TiltHydrometer\WinBeaconWrapper\obj\Debug\WinBeaconWrapper.csproj.CopyComplete
+G:\R&D\REOSoftware\TiltHydrometer\WinBeaconWrapper\obj\Debug\WinBeaconWrapper.dll
+G:\R&D\REOSoftware\TiltHydrometer\WinBeaconWrapper\obj\Debug\WinBeaconWrapper.pdb

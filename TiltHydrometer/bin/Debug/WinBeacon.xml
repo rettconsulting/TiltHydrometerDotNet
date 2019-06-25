@@ -1,0 +1,187 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>WinBeacon</name>
+    </assembly>
+    <members>
+        <member name="T:WinBeacon.Beacon">
+            <summary>
+            Class that represents a Beacon.
+            </summary>
+        </member>
+        <member name="P:WinBeacon.Beacon.Uuid">
+            <summary>
+            UUID of the beacon.
+            </summary>
+        </member>
+        <member name="P:WinBeacon.Beacon.Address">
+            <summary>
+            Bluetooth MAC-address of the beacon.
+            </summary>
+        </member>
+        <member name="P:WinBeacon.Beacon.Major">
+            <summary>
+            Major number of the beacon.
+            </summary>
+        </member>
+        <member name="P:WinBeacon.Beacon.Minor">
+            <summary>
+            Minor number of the beacon.
+            </summary>
+        </member>
+        <member name="P:WinBeacon.Beacon.Rssi">
+            <summary>
+            RSSI power of the beacon in dB.
+            </summary>
+        </member>
+        <member name="P:WinBeacon.Beacon.CalibratedTxPower">
+            <summary>
+            Calibrated TX power of the beacon in dB.
+            </summary>
+        </member>
+        <member name="P:WinBeacon.Beacon.CompanyId">
+            <summary>
+            CompanyId of the beacon (0x4C00 for Apple iBeacon).
+            </summary>
+        </member>
+        <member name="P:WinBeacon.Beacon.IsAppleIBeacon">
+            <summary>
+            True if the beacon is an (emulation of) Apple iBeacon.
+            </summary>
+        </member>
+        <member name="M:WinBeacon.Beacon.#ctor(System.String,System.Int32,System.Int32,System.Int32,System.Int32)">
+            <summary>
+            Creates a beacon.
+            </summary>
+            <param name="uuid">UUID of the beacon.</param>
+            <param name="major">Major number of the beacon.</param>
+            <param name="minor">Minor number of the beacon.</param>
+            <param name="companyId">CompanyId, defaults to comapny id of Apple (0x4C00).</param>
+            <param name="calibratedTxPower">Calibrated TX power of the beacon in dB.</param>
+        </member>
+        <member name="M:WinBeacon.Beacon.CompareTo(System.Object)">
+            <summary>
+            Compare this beacon to an other instance.
+            </summary>
+            <param name="obj">The other instance.</param>
+            <returns>A value that indicates the lexical relationship between the two comparands.</returns>
+        </member>
+        <member name="M:WinBeacon.Beacon.ToString">
+            <summary>
+            Returns a string representation of the beacon data.
+            </summary>
+            <returns>String representation of the beacon data.</returns>
+        </member>
+        <member name="M:WinBeacon.Beacon.Parse(WinBeacon.Stack.Hci.Events.LeAdvertisingEvent)">
+            <summary>
+            Parse low energy advertising event to a beacon instance.
+            </summary>
+            <param name="e">The event.</param>
+            <returns>The beacon or null in case of failure.</returns>
+        </member>
+        <member name="T:WinBeacon.BeaconEventArgs">
+            <summary>
+            Event arguments for Beacon events.
+            </summary>
+        </member>
+        <member name="P:WinBeacon.BeaconEventArgs.Beacon">
+            <summary>
+            Gets the detected beacon.
+            </summary>
+        </member>
+        <member name="T:WinBeacon.BeaconHub">
+            <summary>
+            Hub for detecting beacons and advertise as a beacon.
+            </summary>
+        </member>
+        <member name="M:WinBeacon.BeaconHub.#ctor(System.Int32,System.Int32)">
+            <summary>
+            Creates a hub instance that uses LibUsb or WinUSB as transport.
+            </summary>
+            <param name="usbVid">The VID of the BT4.0 dongle.</param>
+            <param name="usbPid">The PID of the BT4.0 dongle.</param>
+        </member>
+        <member name="M:WinBeacon.BeaconHub.Finalize">
+            <summary>
+            Destructor.
+            </summary>
+        </member>
+        <member name="M:WinBeacon.BeaconHub.Dispose">
+            <summary>
+            Release used resources.
+            </summary>
+        </member>
+        <member name="M:WinBeacon.BeaconHub.EnableAdvertising(WinBeacon.Beacon,System.Nullable{System.TimeSpan})">
+            <summary>
+            Enable advertising as a beacon.
+            </summary>
+            <param name="beacon">The beacon to emulate.</param>
+            <param name="advertisingInterval">The advertising interval. Interval should be between 20 ms and 10.24 seconds. Defaults to 1.28 seconds.</param>
+        </member>
+        <member name="M:WinBeacon.BeaconHub.DisableAdvertising">
+            <summary>
+            Disable advertising as a beacon.
+            </summary>
+        </member>
+        <member name="E:WinBeacon.BeaconHub.BeaconDetected">
+            <summary>
+            Event fired when a beacon is detected. This happens when the dongle receives the beacon's advertising packet.
+            </summary>
+        </member>
+        <member name="T:WinBeacon.BeaconExtensions">
+            <summary>
+            Beacon extension methods.
+            </summary>
+        </member>
+        <member name="M:WinBeacon.BeaconExtensions.GetRange(WinBeacon.Beacon)">
+            <summary>
+            Gets the calculated range in meters.
+            </summary>
+            <param name="beacon">The beacon instance.</param>
+            <returns>The calculated range in meters.</returns>
+        </member>
+        <member name="M:WinBeacon.BeaconExtensions.GetApproximateIosRange(WinBeacon.Beacon)">
+            <summary>
+            Gets the calculated range in meters using a curve that approximates the iOS ranging.
+            </summary>
+            <param name="beacon">The beacon instance.</param>
+            <returns>The calculated range in meters.</returns>
+        </member>
+        <member name="T:WinBeacon.IBeaconHub">
+            <summary>
+            Interface for hubs that detect beacons and can advertise as a beacon.
+            </summary>
+        </member>
+        <member name="M:WinBeacon.IBeaconHub.EnableAdvertising(WinBeacon.Beacon,System.Nullable{System.TimeSpan})">
+            <summary>
+            Enable advertising as a beacon.
+            </summary>
+            <param name="beacon">The beacon to emulate.</param>
+            <param name="advertisingInterval">The advertising interval. Interval should be between 20 ms and 10.24 seconds. Defaults to 1.28 seconds.</param>
+        </member>
+        <member name="M:WinBeacon.IBeaconHub.DisableAdvertising">
+            <summary>
+            Disable advertising as a beacon.
+            </summary>
+        </member>
+        <member name="E:WinBeacon.IBeaconHub.BeaconDetected">
+            <summary>
+            Event fired when a beacon is detected. This happens when the dongle receives the beacon's advertising packet.
+            </summary>
+        </member>
+        <member name="T:System.ComparableExtensions">
+            <summary>
+            IComparable extension methods.
+            </summary>
+        </member>
+        <member name="M:System.ComparableExtensions.NullableCompareTo``1(``0,``0)">
+            <summary>
+            Same as CompareTo but returns null instead of 0 if both items are equal.
+            </summary>
+            <typeparam name="T">IComparable type.</typeparam>
+            <param name="this">This instance.</param>
+            <param name="other">The other instance.</param>
+            <returns>Lexical relation between this and the other instance or null if both are equal.</returns>
+        </member>
+    </members>
+</doc>

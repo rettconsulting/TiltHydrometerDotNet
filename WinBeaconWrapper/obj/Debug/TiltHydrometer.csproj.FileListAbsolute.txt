@@ -1,0 +1,12 @@
+G:\R&D\REOSoftware\TiltHydrometer\WinBeaconWrapper\bin\Debug\TiltHydrometer.dll
+G:\R&D\REOSoftware\TiltHydrometer\WinBeaconWrapper\bin\Debug\TiltHydrometer.pdb
+G:\R&D\REOSoftware\TiltHydrometer\WinBeaconWrapper\bin\Debug\WinBeacon.dll
+G:\R&D\REOSoftware\TiltHydrometer\WinBeaconWrapper\bin\Debug\WinBeacon.Stack.dll
+G:\R&D\REOSoftware\TiltHydrometer\WinBeaconWrapper\bin\Debug\LibUsbDotNet.dll
+G:\R&D\REOSoftware\TiltHydrometer\WinBeaconWrapper\bin\Debug\WinBeacon.pdb
+G:\R&D\REOSoftware\TiltHydrometer\WinBeaconWrapper\bin\Debug\WinBeacon.xml
+G:\R&D\REOSoftware\TiltHydrometer\WinBeaconWrapper\bin\Debug\WinBeacon.Stack.pdb
+G:\R&D\REOSoftware\TiltHydrometer\WinBeaconWrapper\obj\Debug\TiltHydrometer.csproj.CoreCompileInputs.cache
+G:\R&D\REOSoftware\TiltHydrometer\WinBeaconWrapper\obj\Debug\TiltHydrometer.csproj.CopyComplete
+G:\R&D\REOSoftware\TiltHydrometer\WinBeaconWrapper\obj\Debug\TiltHydrometer.dll
+G:\R&D\REOSoftware\TiltHydrometer\WinBeaconWrapper\obj\Debug\TiltHydrometer.pdb

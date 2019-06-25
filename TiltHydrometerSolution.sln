@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27428.2015
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TiltHydrometerClass_X", "TiltHydrometer\TiltHydrometerClass_X.csproj", "{D5B2BE77-C445-4B40-BF0A-30378777BE6D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TiltHydrometerClass", "WinBeaconWrapper\TiltHydrometerClass.csproj", "{70C9D4DE-9685-4AEA-A8F3-304A36C97E37}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D5B2BE77-C445-4B40-BF0A-30378777BE6D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D5B2BE77-C445-4B40-BF0A-30378777BE6D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D5B2BE77-C445-4B40-BF0A-30378777BE6D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D5B2BE77-C445-4B40-BF0A-30378777BE6D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{70C9D4DE-9685-4AEA-A8F3-304A36C97E37}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{70C9D4DE-9685-4AEA-A8F3-304A36C97E37}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{70C9D4DE-9685-4AEA-A8F3-304A36C97E37}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{70C9D4DE-9685-4AEA-A8F3-304A36C97E37}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {BB90C637-D8C0-4CED-B958-652B45FF6F88}
+	EndGlobalSection
+EndGlobal
