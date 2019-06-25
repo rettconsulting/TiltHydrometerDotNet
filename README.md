@@ -22,4 +22,4 @@ I bought the Pluggable BT Radio Dongle and the thing works right out of the box.
 
 I wrote a little wrapper that makes an object which references the win-beacon package that fires off an event that you can subscribe to from a parent class or app that looks about like so:
 
-
+![alt text](https://raw.githubusercontent.com/rettconsulting/TiltHydrometerDotNet/master/TiltHydrometer.png)
